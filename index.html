@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+     <title>oshimap</title>
+     <script src="common.js"></script>
+</head>
+<body>
+     <div id="common-header"></div>
+    
+     <div id="map">
+          <!-- 下部の固定ウィンドウ -->
+          <div id="info-box">
+               <button onclick="document.getElementById('info-box').style.display='none'" style="float:right;">✕</button>
+               <div id="info-content">ピンをクリックすると詳細が表示されます</div>
+          </div>
+     </div>
+</div>
+ 
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
