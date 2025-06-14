@@ -12,8 +12,15 @@ console.log(spotId);
       const spot = spots.find(s => s.id === spotId);
       const routelink = document.getElementById('routo');
       if (spot) {
-        document.getElementById('place-name').textContent = spot.name;
-        routelink.href = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+        if(spot.long_name != ''){
+            console.log('正式名所：' + spot.long_name)
+            document.getElementById('place-name').textContent = spot.long_name;
+            routelink.href = `https://www.google.com/maps/dir/?api=1&destination=${spot.long_name}`
+        }else{
+            document.getElementById('place-name').textContent = spot.name;
+            routelink.href = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+        }
+        
 
       } else {
         document.getElementById('place-name').textContent = '場所が見つかりませんでした';
