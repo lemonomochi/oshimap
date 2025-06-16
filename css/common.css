@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Yomogi", cursive;
 }
 /* overlay-styles.css */
 .hamburger-overlay {
@@ -50,7 +50,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(253, 238, 139, 0.7);
+  background-color: rgba(253, 238, 139, 0.85);
   visibility: hidden;
   opacity: 0;
   transition: all .6s;
@@ -113,4 +113,8 @@ header{
 
 .logo{
     margin-left: 3%;
+}
+.logo h1{
+  font-family: "Caveat", cursive;
+  line-height: 50px;
 }
