@@ -13,9 +13,9 @@ L.tileLayer(`https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=${apiKey}`
 
 // アイコンをタイプごとに用意
 const iconMap = {
-  drama: L.icon({ iconUrl: 'img/drama_icon.png', iconSize: [30, 43], iconAnchor: [15, 40] }),
-  eat:  L.icon({ iconUrl: 'img/eat_icon.png',  iconSize: [30, 43], iconAnchor: [15, 45] }),
-  vlog: L.icon({ iconUrl: 'img/vlog_icon.png', iconSize: [30, 43], iconAnchor: [15, 40] })
+  drama: L.icon({ iconUrl: './img/drama_icon.png', iconSize: [30, 43], iconAnchor: [15, 40] }),
+  eat:  L.icon({ iconUrl: './img/eat_icon.png',  iconSize: [30, 43], iconAnchor: [15, 45] }),
+  vlog: L.icon({ iconUrl: './img/vlog_icon.png', iconSize: [30, 43], iconAnchor: [15, 40] })
 //   default: L.icon({ iconUrl: 'icons/default.png', iconSize: [30, 40], iconAnchor: [15, 40] })
 };
 
