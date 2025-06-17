@@ -1,35 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const spotId = params.get('id');
 
-console.log(spotId);
-
-// アイコンをタイプごとに用意
-const iconMap = {
-  drama: L.icon({ iconUrl: 'img/drama_icon.png', iconSize: [30, 40], iconAnchor: [15, 40] }),
-  eat:  L.icon({ iconUrl: 'img/eat_icon.png',  iconSize: [30, 40], iconAnchor: [15, 40] }),
-  vlog: L.icon({ iconUrl: 'img/vlog_icon.png', iconSize: [30, 40], iconAnchor: [15, 40] })
-//   default: L.icon({ iconUrl: 'icons/default.png', iconSize: [30, 40], iconAnchor: [15, 40] })
-};
-
-// CSVを読み込んでマーカーを追加
-// Papa.parse('places.csv', {
-//   download: true,
-//   header: true,
-//   complete: function(results) {
-//     results.data.forEach(place => {
-//       const lat = parseFloat(place.lat);
-//       const lng = parseFloat(place.lng);
-//       const type = place.movieType;
-
-//       const icon = iconMap[type] || iconMap.default;
-
-//       L.marker([lat, lng], { icon: icon }).addTo(map)
-//         .on('click', function() {
-//           showPlaceDetails(place); // ここはピン押したときの処理
-//         });
-//     });
-//   }
-// });
 
 // spots.csv 読み込み
   Papa.parse('csv/places.csv', {
