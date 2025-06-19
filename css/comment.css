@@ -23,3 +23,7 @@ a{
     height: 20px;
     line-height: 30px;
 }
+
+.main-comment span{
+    font-size: 10px;
+}
