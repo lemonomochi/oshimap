@@ -120,3 +120,8 @@ header{
   font-family: "Caveat", cursive;
   line-height: 50px;
 }
+
+.logo img{
+  height: 50px;
+  line-height: 50px;
+}
