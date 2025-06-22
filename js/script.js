@@ -16,16 +16,16 @@ L.tileLayer(`https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=${apiKey}`
 
 // アイコンをタイプごとに用意
 const iconMap = {
-  drama: L.icon({ iconUrl: 'img/drama_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
-  eat:  L.icon({ iconUrl: 'img/eat_icon.png',  iconSize: [50, 66], iconAnchor: [25, 66] }),
-  vlog: L.icon({ iconUrl: 'img/vlog_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
-  venue: L.icon({ iconUrl: 'img/venue_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
-  default: L.icon({ iconUrl: 'img/drama_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] })
+  drama: L.icon({ iconUrl: '../img/drama_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
+  eat:  L.icon({ iconUrl: '../img/eat_icon.png',  iconSize: [50, 66], iconAnchor: [25, 66] }),
+  vlog: L.icon({ iconUrl: '../img/vlog_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
+  venue: L.icon({ iconUrl: '../img/venue_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
+  default: L.icon({ iconUrl: '../img/drama_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] })
 };
 
 import { loadCSV } from './csvLoader.js';
 
-loadCSV('./csv/places.csv').then(places =>{
+loadCSV('../csv/places.csv').then(places =>{
   places.forEach(place => {
     console.log(place.move_type);
       const type = place.move_type;

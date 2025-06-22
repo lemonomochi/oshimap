@@ -4,7 +4,7 @@ const spotId = params.get('id');
 import { loadCSV } from './csvLoader.js';
 
 // spots.csv 読み込み
-loadCSV('./csv/places.csv').then(results =>{
+loadCSV('../csv/places.csv').then(results =>{
       const spot = results.find(s => s.id === spotId);
       const routelink = document.getElementById('routo');
       if (spot) {
@@ -22,7 +22,7 @@ loadCSV('./csv/places.csv').then(results =>{
 });
 
   // videos.csv 読み込みして表示
-loadCSV('./csv/video.csv').then(videos =>{
+loadCSV('../csv/video.csv').then(videos =>{
   const filtered = videos.filter(v => v.place_id === spotId);
       const list = document.getElementById('youtube-list');
     //   list.innerHTML = "";
