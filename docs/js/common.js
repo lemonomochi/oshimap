@@ -28,7 +28,7 @@ function setHumburgerMenu() {
 };
 
 
-fetch("http://127.0.0.1:5500/docs/common/index.html")
+fetch("/docs/common/index.html")
   .then(res => res.text())
   .then(html => {
     document.getElementById("common-header").innerHTML = html;
