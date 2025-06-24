@@ -45,7 +45,7 @@ loadCSV('./csv/places.csv').then(places =>{
               <a href="https://www.google.com/maps/dir/?api=1&destination=${place.long_name}" target="_blank">
                 📍 GO!
               </a><br>
-              <a href="detail/index.html?id=${place.id}">
+              <a href="detail/?id=${place.id}">
                 ▶️ 詳細ページへ
               </a>
             `;
