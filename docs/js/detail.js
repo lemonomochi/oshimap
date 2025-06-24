@@ -27,7 +27,7 @@ loadCSV('../csv/video.csv').then(videos =>{
       const list = document.getElementById('youtube-list');
     //   list.innerHTML = "";
 
-      if(filterd.length == 0){
+      if(filtered.length == 0){
           const li = document.createElement('li');
           li.textContent = 'この場所に関連する動画はまだ登録されていません。';
           list.appendChild(li);
