@@ -29,7 +29,7 @@ loadCSV('../csv/video.csv').then(videos =>{
 
       if(filtered.length == 0){
           const li = document.createElement('li');
-          li.textContent = 'この場所に関連する動画はまだ登録されていません。';
+          li.textContent = '関連する動画はありません。';
           list.appendChild(li);
           return;
       }
