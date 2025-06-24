@@ -20,6 +20,7 @@ const iconMap = {
   eat:  L.icon({ iconUrl: './img/eat_icon.png',  iconSize: [50, 66], iconAnchor: [25, 66] }),
   vlog: L.icon({ iconUrl: './img/vlog_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
   venue: L.icon({ iconUrl: './img/venue_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
+  sauna: L.icon({ iconUrl: './img/sauna_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] }),
   default: L.icon({ iconUrl: './img/drama_icon.png', iconSize: [50, 66], iconAnchor: [25, 66] })
 };
 
