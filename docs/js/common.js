@@ -28,7 +28,7 @@ function setHumburgerMenu() {
 };
 
 
-fetch("/docs/common/index.html")
+fetch("/oshimap/common/index.html")
   .then(res => res.text())
   .then(html => {
     document.getElementById("common-header").innerHTML = html;
